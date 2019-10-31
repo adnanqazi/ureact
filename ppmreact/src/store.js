@@ -6,8 +6,8 @@ const initialState = {};
 const middleware = [thunk];
 
 let store;
-
-if (window.navigator.userAgent.includes("chrome")) {
+console.log(window.navigator.userAgent);
+if (window.navigator.userAgent.includes("Chrome")) {
   store = createStore(
     rootReducer,
     initialState,
